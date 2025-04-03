@@ -9,14 +9,16 @@
                 <div class="text-center fs-3 fw-bold {{$first_section->textColor->class}}">
                     <div class="container">
                         <span class="text-uppercase">{{$first_section->title}}</span>
-                        <div class="row pt-3 g-3">
-                            @foreach($first_section->firstSectionFrames as $first_section_frame)
-                            <div class="col-xs-12 border border-3 border-dark">
-                                <span class="d-block border-bottom border-3 border-dark">{{$first_section_frame->subtitle}}</span>
-                                <span>{{$first_section_frame->text}}</span>
+                        @foreach($first_section->firstSectionFrames as $first_section_frame)
+                            <div class="row pt-3 g-0">
+                                <div class="card border-4 border-dark rounded-5">
+                                    <div class="card-header border-bottom border-4 border-dark">{{ $first_section_frame->subtitle }}</div>
+                                    <div class="card-body">
+                                            <span class="card-text">{{ $first_section_frame->text }}</span>
+                                    </div>
+                                </div>
                             </div>
-                            @endforeach
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
