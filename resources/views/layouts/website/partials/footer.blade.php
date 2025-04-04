@@ -4,13 +4,13 @@
         <ul class="list-unstyled list-inline fs-1">
             @forelse ($footer_social_media_links as $footer_social_media_link)
                 <li class="list-inline-item">
-                    <a target="_blank" class="text-dark" href="{{ $footer_social_media_link->url }}" title="{{ $footer_social_media_link->name }}">
+                    <a target="_blank" class="text-dark custom-footer-link" href="{{ $footer_social_media_link->url }}" title="{{ $footer_social_media_link->name }}">
                         <i class="{{ $footer_social_media_link->icon }}"></i>
                     </a>
                 </li>
             @empty
                 <li class="list-inline-item">
-                    <a class="text-dark" href="#" title="{{ __('Section not available') }}">
+                    <a class="text-dark custom-footer-link" href="#" title="{{ __('Section not available') }}">
                         <i class="fa-solid fa-triangle-exclamation"></i>
                     </a>
                 </li>

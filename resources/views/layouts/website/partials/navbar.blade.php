@@ -17,7 +17,7 @@
             <ul class="navbar-nav ms-auto">
                 @foreach ($navbar->navbarLinks as $navbar_link)
                     <li class="nav-item">
-                        <a class="nav-link fs-2 fw-semibold {{ $navbar->textColor->class }}" href="#{{$navbar_link->href}}">
+                        <a class="nav-link fs-2 fw-semibold custom-navbar-link {{ $navbar->textColor->class }}" href="#{{$navbar_link->href}}">
                             {{ $navbar_link->text }}
                         </a>
                     </li>
