@@ -19,6 +19,12 @@
     display: flex;
 }
 
+.custom-header-link,
+.custom-navbar-link,
+.custom-footer-link {
+    transition: font-size 500ms ease;
+}
+
 .sidebar {
     min-height: 100vh;
     width: 300px;
@@ -247,6 +253,26 @@
 .custom-carousel-image {
     width: 75vw;
     height: 600px;
+}
+
+@media (min-width: 1270px) {
+    
+    .custom-header-link:hover {
+        font-size: 3rem !important;
+    }
+
+}
+
+@media (min-width: 1070px) {
+    
+    .custom-navbar-link:hover {
+        font-size: 3rem !important;
+    }
+
+    .custom-footer-link:hover {
+        font-size: 3.5rem !important;
+    }
+
 }
 
 @media (max-width: 1199px) {
