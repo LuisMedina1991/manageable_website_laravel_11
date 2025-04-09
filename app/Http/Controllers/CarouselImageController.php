@@ -35,7 +35,7 @@ class CarouselImageController extends Controller
 
     public function index()
     {
-        $carouselImages = CarouselImage::OrderBy('position')->paginate(3);
+        $carouselImages = CarouselImage::OrderBy('position')->OrderBy('id')->paginate(3);
 
         return view('layouts.admin_panel.carousel_images.index',
             [
