@@ -2,6 +2,15 @@ window.onload = beginScript();
 
 function beginScript() {
 
+    window.addEventListener('load', () => {
+        window.history.pushState('','','/',('#'),[0]);
+     }); 
+      
+     window.addEventListener('hashchange', () => {
+        window.history.pushState('','','/',('#'),[0]);
+         
+     });
+
     function getTranslation(key, replacements = {}) {
 
         let translation = window._translations[key] || key;
